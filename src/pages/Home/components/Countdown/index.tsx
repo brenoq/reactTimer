@@ -58,6 +58,8 @@ export function Countdown() {
   useEffect(() => {
     if (activeCycle) {
       document.title = `Timer - ${minutes}:${seconds}`
+    } else {
+      document.title = 'React Timer'
     }
   }, [minutes, seconds, activeCycle])
 
